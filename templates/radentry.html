@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/datainput'>
+<table>
+<p>Fill out this form to get your Bike's RAD!:</p>
+<tr><td>Reach:</td><td><input name='reach' type='number' width='6'></td></tr>
+<tr><td>Stack:</td><td><input name='stack' type='number' width='6'></td></tr>
+<tr><td>Spacers:</td><td><input name='spacer' type='number' width='6'></td></tr>
+<tr><td>Stem:</td><td><input name='stem' type='number' width='6'></td></tr>
+<tr><td>Headtube Angle:</td><td><input name='htangle' type='number' step='.01' width='6'></td></tr>
+<tr><td>Handlebar Rise:</td><td><input name='htrise' type='number' width='6'></td></tr>
+<tr><td>Backsweep:</td><td><input name='backsweep' type='number' width='6'></td></tr>
+<tr><td>Upsweep:</td><td><input name='upsweep' type='number' width='6'></td></tr>
+<tr><td>Handlebar Width:</td><td><input name='handlebarlength' type='number' width='60'></td></tr>
+<tr><td>Bike Make and Model:</td><td><input name='bikename' type='text' width='60'></td></tr>
+
+</table>
+<p>When you're ready, click this button:</p>
+<p><input value='Do it!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

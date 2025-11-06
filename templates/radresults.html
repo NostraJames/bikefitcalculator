@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>You submitted the following data for {{ bbikename }}:</p>
+<table>
+<tr><td>Reach:</td><td>{{ rreach }}</td> </td></tr>
+<tr><td>Stack:</td><td>{{ sstack }}</td></tr>
+<tr><td>Spacers:</td><td>{{ sspacer }}</td></tr>
+<tr><td>Stem:</td><td>{{ sstem }}</td></tr>
+<tr><td>Headtube Angle:</td><td>{{ hhtangle }}</td></tr>
+<tr><td>Handlebar Rise:</td><td>{{ hhtrise }}</td></tr>
+<tr><td>Backsweep:</td><td>{{ bbacksweep }}</td></tr>
+<tr><td>Upsweep:</td><td>{{ uupsweep }}</td></tr>
+<tr><td>Handlebar Width:</td><td>{{ hhandlebarlength }}</td></tr>
+
+
+
+</table>
+
+<p>Below is your {{ bbikename }}'s RAD</p>
+<table>
+<tr><td>RAD : </td><td>{{ radmm_results }} mm</td> </td></tr>
+<tr><td>RAD in inches : </td><td>{{ radin_results }} inches</td> </td></tr>
+<tr><td>RAAD : </td><td>{{ radangle_results }} degrees</td> </td></tr>
+</table>
+
+
+{% endblock %}
