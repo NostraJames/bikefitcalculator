@@ -60,4 +60,3 @@ I do not believe we shared the same end vision.
 
 ---
 
-![Bike Fit Calculator Diagram](Bike_Fit_Calculator.png)
